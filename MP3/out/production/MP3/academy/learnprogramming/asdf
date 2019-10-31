@@ -1,0 +1,37 @@
+File folder = new File("C:\\Users\\Kennedy\\Downloads");
+        File[] files = folder.listFiles();
+        List<Integer> list = new ArrayList<Integer>(); //Created a list
+        List<String> mp3 = new ArrayList<String>();
+        int i =0;
+        for (File file: files) {
+        //System.out.println(file.getName());
+        //file.toString();
+        String str = file.getName();
+        String extension = str.substring(str.lastIndexOf("."));
+        if (Objects.equals(extension, ".mp3"))
+        {
+        mp3.add(files[i].getName());
+        //System.out.println(files[i].getName());
+        list.add(i);
+        }
+        i++;
+        }
+        System.out.println(mp3);
+
+
+        }
+
+
+
+//        Mp3File test = new Mp3File("C:\\Users\\Kennedy\\Downloads\\Time - Atsushi Kitajoh Remix - Persona 3 Dancing Moon Night.mp3");
+//        ID3v2 id3v2Tag;
+//        if (test.hasId3v2Tag())
+//        {
+//            id3v2Tag = test.getId3v2Tag();
+//        } else
+//            {
+//                id3v2Tag = new ID3v24Tag();
+//                test.setId3v2Tag(id3v2Tag);
+//            }
+//        id3v2Tag.setTitle("Time - Atsushi Kitajoh Remix - Persona 3 Dancing Moon Night");
+//        test.save("C:\\Users\\Kennedy\\Downloads\\time.mp3");
