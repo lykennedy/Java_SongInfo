@@ -1,0 +1,2 @@
+# Java_SongInfo
+This program, given a file location will gather all the mp3 files and grab the song title, artist, year that it was released, and the album that it was apart of. Note that the mp3agic library is being used, so that will have to be downloaded. ALSO note, if this song was downloaded from youtube then the song will not have any album,year, or artist information. So be careful guys LOL don't let anyone see those empty fields... The information will be displayed on the terminal.  
